@@ -1,0 +1,14 @@
+# Python gereksizleri
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Proje özelindeki büyük/gereksiz dosyalar
+yolov8n.pt
+analiz_sonucu.jpg
+*.log
+
+# Eğer hala duruyorsa eski API key içeren dosyalar
+# retail_vision_test_old.py
