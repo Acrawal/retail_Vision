@@ -1,0 +1,24 @@
+@echo off
+title RetailVision — AI Stok Sistemi
+color 0A
+echo.
+echo  ██████╗ ███████╗████████╗ █████╗ ██╗██╗    ██╗   ██╗██╗███████╗██╗ ██████╗ ███╗   ██╗
+echo  ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██║██║    ██║   ██║██║██╔════╝██║██╔═══██╗████╗  ██║
+echo  ██████╔╝█████╗     ██║   ███████║██║██║    ██║   ██║██║███████╗██║██║   ██║██╔██╗ ██║
+echo  ██╔══██╗██╔══╝     ██║   ██╔══██║██║██║    ╚██╗ ██╔╝██║╚════██║██║██║   ██║██║╚██╗██║
+echo  ██║  ██║███████╗   ██║   ██║  ██║██║███████╗╚████╔╝ ██║███████║██║╚██████╔╝██║ ╚████║
+echo  ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝ ╚═══╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+echo.
+echo  [1/2] Gereksinimler kontrol ediliyor...
+pip install -r requirements.txt -q
+
+echo.
+echo  [2/2] RetailVision backend baslatiliyor...
+echo        Dashboard: http://localhost:8000
+echo        API Docs:  http://localhost:8000/docs
+echo.
+
+start "" http://localhost:8000
+uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+
+pause

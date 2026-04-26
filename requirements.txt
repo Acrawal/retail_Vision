@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+ultralytics
+opencv-python
+openai
+sqlalchemy
+python-multipart
+pillow
+aiofiles
