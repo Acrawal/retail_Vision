@@ -5,6 +5,18 @@ __pycache__/
 .venv/
 venv/
 
+# Node.js
+node_modules/
+backend-js/node_modules/
+
+# Veritabanı (SQLite)
+*.db
+*.db-shm
+*.db-wal
+
+# Yüklenen görseller
+uploads/
+
 # Proje özelindeki büyük/gereksiz dosyalar
 yolov8n.pt
 analiz_sonucu.jpg
